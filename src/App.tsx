@@ -1,4 +1,5 @@
 import Sidebar from './features/sidebar/Sidebar';
+import ChatWindow from './features/chat/ChatWindow';
 import { useSelector } from 'react-redux';
 import type { RootState } from './store/store';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,12 +17,15 @@ function App() {
       <Sidebar />
       <main className={styles.main}>
         {activeConversation ? (
-          <div className={styles.chatHeader}>
-            <Avatar initials={activeConversation.avatar} size="sm" online />
-            <div className={styles.chatHeaderInfo}>
-              <span className={styles.chatHeaderName}>{activeConversation.name}</span>
-              <span className={styles.chatHeaderStatus}>Online</span>
+          <div className={styles.mainContent}>
+            <div className={styles.chatHeader}>
+              <Avatar initials={activeConversation.avatar} size="sm" online />
+              <div className={styles.chatHeaderInfo}>
+                <span className={styles.chatHeaderName}>{activeConversation.name}</span>
+                <span className={styles.chatHeaderStatus}>Online</span>
+              </div>
             </div>
+            <ChatWindow conversation={activeConversation} />
           </div>
         ) : (
           <div className={styles.placeholder}>
