@@ -145,8 +145,9 @@ The project uses **CSS Modules** for scoped, maintainable styling:
 - Component-specific `.module.css` files
 
 Color scheme:
-- Primary: `#667eea` (Purple)
-- Secondary: `#764ba2` (Dark purple)
+- Primary: `#ef4444` (Red)
+- Secondary: `#f97316` (Orange)
+- Accent: `#eab308` (Yellow)
 - Neutral: `#f0f2f5` (Light gray)
 - Text: `#1a1a1a` (Dark)
 

@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import ConversationList from './ConversationList';
+import logo from '../../assets/logo.svg';
 import styles from './sidebar.module.css';
 
 const Sidebar = () => {
@@ -11,8 +10,8 @@ const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarHeader}>
-        <FontAwesomeIcon icon={faCommentDots} className={styles.headerIcon} />
-        <h2 className={styles.headerTitle}>Chats</h2>
+        <img src={logo} alt="NEXLAB Chat" className={styles.headerLogo} />
+        <h2 className={styles.headerTitle}>NEXLAB</h2>
       </div>
       <SearchBar value={searchQuery} onChange={setSearchQuery} />
       <ConversationList searchQuery={searchQuery} />

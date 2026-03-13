@@ -89,8 +89,8 @@
 }
 
 .input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
 }
 
 .sendButton {
@@ -99,7 +99,7 @@
   height: 36px;
   border: none;
   border-radius: 8px;
-  background-color: #3b82f6;
+  background-color: #f97316;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -110,9 +110,9 @@
 }
 
 .sendButton:hover:not(:disabled) {
-  background-color: #2563eb;
+  background-color: #ea580c;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
 }
 
 .sendButton:active:not(:disabled) {
